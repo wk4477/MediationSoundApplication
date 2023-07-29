@@ -1,0 +1,146 @@
+<resources>
+
+    <string name="app_name">ध्यान ध्वनि मिश्रण</string>
+    <string name="meditation_sound">ध्यान ध्वनि</string>
+    <string name="mixture">मिश्रण</string>
+    <string name="discover_relaxation">विश्राम की खोज करें</string>
+    <string name="sound_with_us">हमारे साथ ध्वनि!</string>
+    <string name="newimage">नया</string>
+    <string name="most_listen">सबसे सुनो</string>
+    <string name="home">घर</string>
+    <string name="journey">यात्रा</string>
+    <string name="journeys">यात्रा</string>
+    <string name="settings">समायोजन</string>
+
+    <string name="hello_blank_fragment">हैलो खाली टुकड़ा</string>
+    <string name="gentle_morning">कोमल सुबह</string>
+    <string name="morning_sound_with_multiple_music">सुबह की आवाज कई संगीत के साथ</string>
+    <string name="add_sound">ध्वनि जोड़ें</string>
+    <string name="timer">घड़ी</string>
+    <string name="musicdata">संगीतडेटा</string>
+    <string name="title">शीर्षक</string>
+    <string name="alpha">अल्फा</string>
+    <string name="mediationsongs">मध्यस्थता गाने</string>
+    <string name="custom_tune">कस्टम ट्यून</string>
+    <string name="add_music">संगीत जोड़ें</string>
+    <string name="addmusic">संगीत जोड़ें</string>
+    <string name="main_sound">मुख्य ध्वनि</string>
+    <string name="settingsnew">समायोजन</string>
+    <string name="feedback">प्रतिपुष्टि</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="languages">बोली</string>
+    <string name="more_apps">और ऐप</string>
+    <string name="share">साझा करना</string>
+    <string name="go_premium">प्रीमियम के लिए जाएँ</string>
+    <string name="meditationsoundnametxt">ध्यान ध्वनि</string>
+    <string name="sounds">ध्वनि</string>
+    <string name="custom_tunes">कस्टम धुन</string>
+
+
+    <string name="default_sound">चूक जाना</string>
+    <string name="clock_sound">घड़ी</string>
+    <string name="rooster_sound">मुरग़ा</string>
+    <string name="your">तुम्हारी</string>
+    <string name="journeyss">यात्रा</string>
+    <string name="total_checks_in_1_week">1 सप्ताह में कुल जांच</string>
+    <string name="two">2</string>
+    <string name="total_weeks">कुल सप्ताह</string>
+    <string name="one">1</string>
+    <string name="remainder">अनुस्मारक</string>
+    <string name="custom_tuness">कस्टम धुन</string>
+    <string name="songs">गीत</string>
+    <string name="reminder">अनुस्मारक</string>
+    <string name="set_your_time">अपना समय निर्धारित करें</string>
+    <string name="pick_a_time_and_day_when_you_would">एक समय और दिन चुनें।जब आप करेंगे</string>
+    <string name="like_to_receieve_notification">अधिसूचना प्राप्त करना पसंद है</string>
+    <string name="feedbacktxt">प्रतिपुष्टि</string>
+    <string name="thank_you_for_using_this_app">इस ऐप का उपयोग करने के लिए धन्यवाद</string>
+    <string name="how_was_your_experience_with">के साथ आपका अनुभव कैसा रहा</string>
+    <string name="no_thanks">जी नहीं, धन्यवाद</string>
+    <string name="send_feeback">फीबैक भेजें</string>
+    <string name="write_feeback">फीबैक लिखें</string>
+    <string name="hellomypeoples">hellomypeople</string>
+    <string name="update_message">अपना ऐप अपडेट करें</string>
+    <string name="restart">पुनः आरंभ करें</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="unlimited_access_to">तक असीमित पहुंच</string>
+    <string name="all_premium_tools">सभी प्रीमियम उपकरण</string>
+    <string name="get_seamless_experience_by_purchasing">खरीद कर सहज अनुभव प्राप्त करें</string>
+    <string name="the_ads_free_version">विज्ञापन मुक्त संस्करण</string>
+    <string name="unlock_all_mediation_sound">सभी मध्यस्थता ध्वनि अनलॉक करें</string>
+    <string name="_100_ads_free_version">100% विज्ञापन मुक्त संस्करण</string>
+    <string name="mindfulness_sound">दिमागीपन ध्वनि</string>
+    <string name="monthly_offer">मासिक प्रस्ताव</string>
+    <string name="pkr">पीकेआर।</string>
+    <string name="_2500">2500/-</string>
+    <string name="viewpagetitle">शीर्षक</string>
+    <string name="description">विवरण</string>
+    <string name="time">समय</string>
+    <string name="close">बंद करना</string>
+    <string name="set_the_timer">टाइमर सेट करें</string>
+    <string name="set_your_times">अपना समय निर्धारित करें</string>
+    <string name="how_long_do_you_want_sound_to_play_for">आप कितनी देर तक ध्वनि बजाना चाहते हैं?</string>
+    <string name="add_timer">टाइमर जोड़ें</string>
+    <string name="_00_00">00.00</string>
+    <string name="this_app">यह एप</string>
+    <string name="tap_to_skip">छोड़ने के लिए टैप करें</string>
+    <string name="currenttime">वर्तमान समय</string>
+    <string name="days">दिन</string>
+    <string name="minutes">मिनट</string>
+    <string name="seconds">सेकंड</string>
+    <string name="am">पूर्वाह्न</string>
+    <string name="home_btm">घर</string>
+    <string name="journeybtm">यात्रा</string>
+    <string name="settingbtm">सेटिंग</string>
+    <string name="gentletitle">कोमल सुबह</string>
+    <string name="gentlebody">मल्टीपल म्यूजिक के साथ मॉर्निंग साउंड</string>
+    <string name="peacelaketitle">शांतिपूर्ण झील</string>
+    <string name="peacelakebody">एकाधिक संगीत के साथ शांतिपूर्ण गीत</string>
+    <string name="sunrisetitle">सूर्योदय</string>
+    <string name="sunrisebody">एकाधिक संगीत के साथ सूर्योदय ध्वनि</string>
+    <string name="softtitle">शीतल पियानो</string>
+    <string name="softbody">मल्‍टीपल म्‍यूजिक के साथ सॉफ्ट पियानो</string>
+    <string name="heaventitle">स्वर्ग</string>
+    <string name="heavenbody">एकाधिक संगीत के साथ स्वर्ग ध्वनि</string>
+    <string name="raintitle">उत्तम वर्षा</string>
+    <string name="rainbody">वर्षा प्रभाव के साथ एकाधिक ध्वनि</string>
+    <string name="inspirationtitle">प्रेरणा</string>
+    <string name="inspirationbody">विभिन्न प्रभावों के साथ प्रेरणा ध्वनि</string>
+    <string name="autumntitle">शरद वन</string>
+    <string name="autumnbody">विभिन्न प्रभावों के साथ वन ध्वनि</string>
+    <string name="conventtitle">मठ</string>
+    <string name="conventbody">कॉन्वेंट एरिया साउंड</string>
+    <string name="seatitle">सी साइड रिलैक्सेशन</string>
+    <string name="seabody">सर्वश्रेष्ठ विश्राम ध्वनि</string>
+    <string name="templetitle">मंदिर पहाड़ियों में</string>
+    <string name="templebody">पहाड़ियों के साथ मंदिर क्षेत्र ध्वनि</string>
+    <string name="mystictitle">रहस्यवादी मंदिर</string>
+    <string name="mysticbody">रहस्यवादी मंदिर क्षेत्र पहाड़ियों के साथ ध्वनि</string>
+    <string name="scratchingtitle">scratching</string>
+    <string name="scratchingbody">प्रभाव के साथ खरोंच ध्वनि</string>
+    <string name="pagetitle">पेज टर्निंग</string>
+    <string name="pagebody">पेज टर्निंग विथ इफेक्ट्स</string>
+    <string name="chewingtitle">चबाने</string>
+    <string name="chewingbody">चबाने की ध्वनि प्रभाव</string>
+    <string name="whisperingtitle">धीरे-धीरे बोलना</string>
+    <string name="whisperingbody">कानाफूसी ध्वनि प्रभाव</string>
+    <string name="breathingtitle">सांस लेना</string>
+    <string name="breathingbody">श्वास ध्वनि प्रभाव</string>
+    <string name="cracklingtitle">तीखी आवाज</string>
+    <string name="cracklingbody">कर्कश ध्वनि प्रभाव</string>
+    <string name="cattitle">बिल्ली म्याऊँ</string>
+    <string name="catbody">ध्वनि प्रभाव के साथ बिल्ली की गड़गड़ाहट</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="exit">बाहर निकलना</string>
+    <string name="do_you_want_to_exit">क्या आपको बाहर निकलना है</string>
+
+
+    <string-array name="quotations">
+        <item>"कभी-कभी सबसे अधिक उत्पादक चीज जो आप कर सकते हैं वह है आराम करना"। -मार्क ब्लैक</item>
+        <item>"जितना अधिक आराम आप प्राप्त कर सकते हैं, उतना ही बेहतर आप करेंगे"। -इसहाक मिजराही</item>
+        <item>"जितना महत्वपूर्ण काम करने के लिए योजना बनाना है, उतना ही महत्वपूर्ण है आराम, विश्राम, आत्म-देखभाल और नींद की योजना बनाना।" - अकिरोक ब्रॉस्ट</item>
+        <item>"कभी-कभी पूरे दिन में सबसे महत्वपूर्ण बात यह होती है कि हम दो गहरी सांसों के बीच आराम करते हैं"। - एट्टी हिलेसम</item>
+        <item>"कोई फर्क नहीं पड़ता कि आप काम पर कितना दबाव महसूस करते हैं, अगर आप हर घंटे कम से कम पांच मिनट के लिए आराम करने के तरीके ढूंढ सकते हैं, तो आप अधिक उत्पादक होंगे।" - डॉ जॉयस ब्रदर्स</item>
+    </string-array>
+
+</resources>

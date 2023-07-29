@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/alternative_black_and_white"
+    tools:context="com.project.meditationsoundmixture.ui.FeedbackScreen">
+
+    <ImageView
+        android:id="@+id/imgBackArfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/ic_arrowback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textfeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/feedbacktxt"
+        android:textColor="?attr/black_and_white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackArfd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBackArfd"
+        app:layout_constraintTop_toTopOf="@+id/imgBackArfd" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/fdbg"
+        app:layout_constraintTop_toBottomOf="@+id/textfeedback" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/thank_you_for_using_this_app"
+        android:textColor="?attr/black_and_white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/how_was_your_experience_with"
+        android:textColor="@color/experiencefeedback"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/thisapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_app"
+        android:textColor="@color/experiencefeedback"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/constlayoutanimation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_60sdp"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/thisapp">-->
+
+    <!--        <com.airbnb.lottie.LottieAnimationView-->
+    <!--            android:id="@+id/leftrocket_anim"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:lottie_autoPlay="true"-->
+    <!--            app:lottie_loop="true"-->
+    <!--            app:lottie_rawRes="@raw/feedback" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/emojislayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_60sdp"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/thisapp">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/emojiimageone"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:src="@drawable/angryimage"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/emojiimgtwo"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/emojiimgtwo"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:src="@drawable/surprise"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/emojiimgthree"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/emojiimageone"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/emojiimgthree"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:src="@drawable/smile"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/emojiimgfour"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/emojiimgtwo"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/emojiimgfour"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:src="@drawable/laughing"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/emojiimgfive"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/emojiimgthree"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/emojiimgfive"-->
+    <!--            android:layout_width="@dimen/_40sdp"-->
+    <!--            android:layout_height="@dimen/_40sdp"-->
+    <!--            android:src="@drawable/love"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/emojiimgfour"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:layout_editor_absoluteY="0dp" />-->
+
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <com.hsalf.smilerating.SmileRating-->
+<!--        android:id="@+id/smileyRating"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:angryColor="#f29a68"-->
+<!--        app:drawingColor="#353431"-->
+<!--        app:isIndicator="false"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/thisapp"-->
+<!--        app:normalColor="#f2dd68"-->
+<!--        app:placeHolderBackgroundColor="#e6e8ed"-->
+<!--        app:placeHolderSmileColor="#ffffff"-->
+<!--        app:textNonSelectionColor="#AEB3B5"-->
+<!--        app:textSelectionColor="?black_and_white" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feedbackconst"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/fdshape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/smileRating">
+
+        <EditText
+            android:id="@+id/getEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:background="@null"
+            android:hint="@string/write_feeback"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:textColor="@color/writefeedback"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smileRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginTop="12dp"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:isIndicator="false"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="?black_and_white"
+        app:layout_constraintStart_toStartOf="@+id/thisapp"
+        app:layout_constraintEnd_toEndOf="@+id/thisapp"
+        app:layout_constraintTop_toBottomOf="@+id/thisapp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnnothankz"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/fdbtnone"
+        android:text="@string/no_thanks"
+        android:textAllCaps="false"
+        android:textColor="@color/feedbackbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsendfeedback"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/add_timer_background_unselected"
+        android:text="@string/send_feeback"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnnothankz" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

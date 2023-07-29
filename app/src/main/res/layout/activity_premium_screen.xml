@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/premiumscreen"
+    tools:context="com.project.meditationsoundmixture.ui.PremiumScreen">
+    <ImageView
+        android:id="@+id/imgBackAr"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_15sdp"
+        app:tint="@color/white"
+        android:src="@drawable/ic_arrowback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMediation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/mindfulness_sound"
+        android:textColor="@color/mindfulnesscolor"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackAr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBackAr"
+        app:layout_constraintTop_toTopOf="@+id/imgBackAr" />
+
+    <ImageView
+        android:id="@+id/primg"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/premiumicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMediation" />
+
+    <TextView
+        android:id="@+id/unlimited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlimited_access_to"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/mindfulnesscolor"
+        app:layout_constraintEnd_toEndOf="@+id/primg"
+        app:layout_constraintStart_toStartOf="@+id/primg"
+        app:layout_constraintTop_toBottomOf="@+id/primg" />
+
+    <TextView
+        android:id="@+id/allpremiumtools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_premium_tools"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/mindfulnesscolor"
+        app:layout_constraintEnd_toEndOf="@+id/unlimited"
+        app:layout_constraintStart_toStartOf="@+id/unlimited"
+        app:layout_constraintTop_toBottomOf="@+id/unlimited" />
+
+    <TextView
+        android:id="@+id/seamlesspurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_seamless_experience_by_purchasing"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/getseemlesscolor"
+        app:layout_constraintEnd_toEndOf="@+id/allpremiumtools"
+        app:layout_constraintStart_toStartOf="@+id/allpremiumtools"
+        app:layout_constraintTop_toBottomOf="@+id/allpremiumtools" />
+
+    <TextView
+        android:id="@+id/freeversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_ads_free_version"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/getseemlesscolor"
+        app:layout_constraintEnd_toEndOf="@+id/seamlesspurchase"
+        app:layout_constraintStart_toStartOf="@+id/seamlesspurchase"
+        app:layout_constraintTop_toBottomOf="@+id/seamlesspurchase" />
+
+    <ImageView
+        android:id="@+id/pinktick"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/ptick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/freeversion" />
+
+    <TextView
+        android:id="@+id/unlockmeditation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlock_all_mediation_sound"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textColor="@color/mindfulnesscolor"
+        android:textSize="@dimen/_15ssp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/pinktick"
+        app:layout_constraintStart_toEndOf="@+id/pinktick"
+        app:layout_constraintTop_toTopOf="@+id/pinktick" />
+
+    <ImageView
+        android:id="@+id/pinkticktwo"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ptick"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/pinktick"
+        app:layout_constraintStart_toStartOf="@+id/pinktick"
+        app:layout_constraintTop_toBottomOf="@+id/pinktick" />
+
+    <TextView
+        android:id="@+id/addsfreeversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/_100_ads_free_version"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textColor="@color/mindfulnesscolor"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/pinkticktwo"
+        app:layout_constraintStart_toEndOf="@+id/pinkticktwo"
+        app:layout_constraintTop_toTopOf="@+id/pinkticktwo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_timer_background_unselected"
+        app:layout_constraintTop_toBottomOf="@+id/addsfreeversion"
+        tools:layout_editor_absoluteX="45dp">
+
+        <TextView
+            android:id="@+id/monthlyoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/monthly_offer"
+            android:textColor="@color/mindfulnesscolor"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pkr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/pkr"
+            android:textColor="@color/mindfulnesscolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/monthlyoffer"
+            app:layout_constraintTop_toBottomOf="@+id/monthlyoffer" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/_2500"
+            android:textColor="@color/mindfulnesscolor"
+            android:textSize="@dimen/_40ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/pkr"
+            app:layout_constraintStart_toEndOf="@+id/pkr"
+            app:layout_constraintTop_toTopOf="@+id/pkr" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/arrforward"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

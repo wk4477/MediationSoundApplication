@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_timer">
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/canceltxt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/close"-->
+<!--        android:textColor="@color/textstart"-->
+<!--        android:layout_marginTop="@dimen/_20sdp"-->
+<!--        android:textSize="@dimen/_15ssp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/addtimer"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/addtimer"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/addtimer" />-->
+
+    <LinearLayout
+        android:id="@+id/canceltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/transparent"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/addtimer"
+        app:layout_constraintStart_toStartOf="@+id/addtimer"
+        app:layout_constraintTop_toBottomOf="@+id/addtimer">
+
+        <ImageView
+            android:id="@+id/back_Call_Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@string/no_pic"
+            android:src="@drawable/close_reminder_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start|center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:maxLines="1"
+            android:textColor="@color/textstart"
+            android:text="@string/close"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="0dp"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/set_the_timer"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textColor="@color/textstart"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:theme="@style/SwitchTheme"
+        android:thumb="@drawable/thumb_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/textparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textparent"
+        app:layout_constraintTop_toTopOf="@+id/textparent"
+        app:track="@drawable/track_selector" />
+    <TextView
+        android:id="@+id/settime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_your_times"
+        android:textColor="@color/setime"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="@+id/textparent"
+        app:layout_constraintStart_toStartOf="@+id/textparent"
+        app:layout_constraintTop_toBottomOf="@+id/textparent" />
+    <TextView
+        android:id="@+id/longsong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_long_do_you_want_sound_to_play_for"
+        android:textColor="@color/setime"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/settime"
+        app:layout_constraintStart_toStartOf="@+id/settime"
+        app:layout_constraintTop_toBottomOf="@+id/settime" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_00_00"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@+id/longsong"
+        app:layout_constraintStart_toStartOf="@+id/longsong"
+        app:layout_constraintTop_toBottomOf="@+id/longsong" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constalpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:id="@+id/hours_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:theme="@style/DefaultNumberPickerTheme"
+            android:layout_marginVertical="8dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/minutes_container"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="8dp"/>
+            <NumberPicker
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/minutes_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/seconds_container"
+            app:layout_constraintStart_toEndOf="@+id/hours_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minutes"
+                android:textColor="@color/darkcolor"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="8dp"/>
+            <NumberPicker
+                android:id="@+id/minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/DefaultNumberPickerTheme"
+                android:descendantFocusability="blocksDescendants"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seconds_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/minutes_container">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seconds"
+                android:textColor="@color/darkcolor"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="8dp"/>
+            <NumberPicker
+                android:id="@+id/seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/DefaultNumberPickerTheme"
+                android:descendantFocusability="blocksDescendants" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addtimer"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_timer"
+        android:textColor="@color/btncolor"
+        android:background="@drawable/add_timer_background_unselected"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constalpha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

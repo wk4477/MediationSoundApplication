@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.meditationsoundmixture">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".Application.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.MeditationSoundMixture"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.PremiumScreen"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="nosensor"
+            android:name=".util.BaseClass"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LanguagesScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Theme.MeditationSoundMixture.NoActionBar" />
+        <activity
+            android:name=".ui.FeedbackScreen"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Theme.MeditationSoundMixture.NoActionBar" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MeditationSoundMixture.NoActionBar" />
+        <activity
+            android:name=".MediationMenu.MediationScreen"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MediationSound"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MeditationSoundMixture.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ui.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Theme.MeditationSoundMixture.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver
+            android:name=".MeditatioinSoundServices.MyMusicService$Receiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="quit_action" />
+                <action android:name="play" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MeditatioinSoundServices.MyMusicService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".receivers.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.abumuhab.alarm.action.START_ALARM" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".MeditatioinSoundServices.MusicActionReceiver"
+            android:enabled="true" />
+        <service
+            android:name=".services.MediaPlaybackService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+        <service android:name=".playback.MusicService"
+            android:exported="true"/>
+        <service
+            android:name=".MeditatioinSoundServices.MusicPlayerService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

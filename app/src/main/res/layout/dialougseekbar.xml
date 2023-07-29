@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialogseekbar">
+
+    <TextView
+        android:id="@+id/CustomTunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/custom_tunes"
+        android:textColor="@color/addmusic"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@+id/crossbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/crossbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:contentDescription="@string/no_pic"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/ic_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/addmusic"
+        android:textColor="@color/addmusic"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomTunes" />
+
+    <ImageView
+        android:id="@+id/addSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no_pic"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/addMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addMusic"
+        app:layout_constraintTop_toBottomOf="@+id/CustomTunes" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentconst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/constLyseven"
+        app:layout_constraintTop_toBottomOf="@id/addMusic">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLyone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageseekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adapter"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardview"
+                app:layout_constraintStart_toEndOf="@+id/cardview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/delfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/no_pic"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_adapter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_adapter"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_adapter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLytwo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLyone">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewtwo"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgseekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adapters"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardviewtwo"
+                app:layout_constraintStart_toEndOf="@+id/cardviewtwo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/delfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/no_pic"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_adapters"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_adapters"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_adapters" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLythree"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLytwo">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewthree"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgseekbarthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adaptersthree"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardviewthree"
+                app:layout_constraintStart_toEndOf="@+id/cardviewthree"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/delthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/no_pic"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_adaptersthree"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_adaptersthree"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_adaptersthree" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLyfive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLythree">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewfive"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgseekbarfive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adaptersfive"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardviewfive"
+                app:layout_constraintStart_toEndOf="@+id/cardviewfive"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/deltwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/no_pic"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_adaptersfive"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_adaptersfive"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_adaptersfive" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLysix"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLyfive">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewsix"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgseekbarsix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adapterssix"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardviewsix"
+                app:layout_constraintStart_toEndOf="@+id/cardviewsix"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/delone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/no_pic"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar_adapterssix"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/seekBar_adapterssix"
+                app:layout_constraintTop_toTopOf="@+id/seekBar_adapterssix" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLyfour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLysix">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewsfour"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgseekbarfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/no_pic"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cirshape" />
+
+            </androidx.cardview.widget.CardView>
+
+            <SeekBar
+                android:id="@+id/seekBar_adaptersfour"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxWidth="@dimen/_8sdp"
+                android:maxHeight="@dimen/_4sdp"
+                android:min="0"
+                android:minHeight="@dimen/_1sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:progress="40"
+                android:progressDrawable="@drawable/seekbar_progress_theme_1"
+                android:thumb="@drawable/ic_seekbarthumb"
+                app:layout_constraintBottom_toBottomOf="@+id/cardviewsfour"
+                app:layout_constraintStart_toEndOf="@+id/cardviewsfour"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLyseven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/mainsound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/main_sound"
+            android:textColor="@color/addmusic"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:contentDescription="@string/no_pic"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_volume_mute"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainsound"
+            app:tint="@color/musicicon" />
+
+        <SeekBar
+            android:id="@+id/seekBar_adaptersseven"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:foregroundGravity="center"
+            android:indeterminate="false"
+            android:max="100"
+            android:maxWidth="@dimen/_8sdp"
+            android:maxHeight="@dimen/_6sdp"
+            android:min="0"
+            android:minHeight="@dimen/_1sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:progress="40"
+            android:progressDrawable="@drawable/seekbar_progress_theme_1"
+            android:thumb="@drawable/ic_seekbarthumb"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_pic"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_volumeup"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar_adaptersseven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/seekBar_adaptersseven"
+            app:layout_constraintTop_toTopOf="@+id/seekBar_adaptersseven"
+            app:tint="@color/musicicon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar_adaptersseven">
+
+        </View>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

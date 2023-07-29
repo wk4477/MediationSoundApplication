@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/constraintLayout"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_100sdp"
+       android:layout_margin="@dimen/_15sdp"
+       android:background="@drawable/squareshape"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <TextView
+       android:id="@+id/txtGentleMorning"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="@font/poppins_medium"
+       android:text="@string/gentle_morning"
+       android:textColor="#000000"
+       android:textSize="@dimen/_20ssp"
+       app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+       app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+       app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+   <TextView
+       android:id="@+id/mt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/morning_sound_with_multiple_music"
+       android:textColor="#B1B1B1"
+       android:textSize="@dimen/_10ssp"
+       app:layout_constraintEnd_toEndOf="@+id/txtGentleMorning"
+       app:layout_constraintStart_toStartOf="@+id/txtGentleMorning"
+       app:layout_constraintTop_toBottomOf="@+id/txtGentleMorning" />
+   <ImageView
+       android:id="@+id/addMusic"
+       android:layout_width="@dimen/_25sdp"
+       android:layout_height="@dimen/_25sdp"
+       android:src="@drawable/ic_musicicon"
+       android:layout_marginStart="@dimen/_30sdp"
+       android:layout_marginTop="@dimen/_25sdp"
+       app:layout_constraintEnd_toStartOf="@+id/addVol"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintHorizontal_chainStyle="spread_inside"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/mt" />
+   <ImageView
+       android:id="@+id/addVol"
+       android:layout_width="@dimen/_35sdp"
+       android:layout_height="@dimen/_35sdp"
+       android:src="@drawable/ic_playbtn"
+       app:layout_constraintBottom_toBottomOf="@+id/addMusic"
+       app:layout_constraintEnd_toStartOf="@+id/imageView2"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toEndOf="@+id/addMusic"
+       app:layout_constraintTop_toTopOf="@+id/addMusic" />
+
+   <ImageView
+       android:id="@+id/imageView2"
+       android:layout_width="@dimen/_25sdp"
+       android:layout_height="@dimen/_25sdp"
+       android:src="@drawable/ic_alarm"
+       app:layout_constraintBottom_toBottomOf="@+id/addVol"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginEnd="@dimen/_25sdp"
+       app:layout_constraintStart_toEndOf="@+id/addVol"
+       app:layout_constraintTop_toTopOf="@+id/addVol" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/add_sound"
+       android:textColor="@color/black"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:fontFamily="@font/poppins_medium"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="@+id/addMusic"
+       app:layout_constraintStart_toStartOf="@+id/addMusic"
+       app:layout_constraintTop_toBottomOf="@+id/addMusic" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/timer"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:fontFamily="@font/poppins_medium"
+       android:textColor="@color/black"
+       app:layout_constraintEnd_toEndOf="@+id/imageView2"
+       app:layout_constraintStart_toStartOf="@+id/imageView2"
+       app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

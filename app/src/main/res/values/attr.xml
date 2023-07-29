@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="black_and_white" format="color"/>
+    <attr name="language_item_text" format="color"/>
+    <attr name="language_item_bg" format="color"/>
+    <attr name="alternative_black_and_white" format="color"/>
+    <attr name="recyclerViewStyle_border" format="color"/>
+    <attr name="bg_meditation_end" format="color"/>
+    <attr name="bg_meditation_start" format="color"/>
+
+</resources>

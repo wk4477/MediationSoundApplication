@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" >
+        <shape>
+            <corners
+                android:radius="@dimen/_10sdp" />
+<!--            <paddinging-->
+<!--                android:left="10dp"-->
+<!--                android:top="10dp"-->
+<!--                android:right="10dp"-->
+<!--                android:bottom="10dp" />-->
+            <solid
+                android:color="@color/feedbackbtn"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" >
+        <shape>
+            <corners
+                android:radius="@dimen/_10sdp" />
+<!--            <padding-->
+<!--                android:left="10dp"-->
+<!--                android:top="10dp"-->
+<!--                android:right="10dp"-->
+<!--                android:bottom="10dp" />-->
+            <solid
+                android:color="@color/experiencefeedback"/>
+        </shape>
+    </item>
+<!--    <item android:drawable="@drawable/add_timer_bg"/>-->
+</selector>

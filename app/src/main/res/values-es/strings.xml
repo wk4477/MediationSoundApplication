@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">MeditaciónSonidoMezcla</string>
+    <string name="meditation_sound">Sonido de meditación</string>
+    <string name="mixture">Mezcla</string>
+    <string name="discover_relaxation">Descubre la relajación</string>
+    <string name="sound_with_us">suena con nosotros!</string>
+    <string name="newimage">Nuevo</string>
+    <string name="most_listen">La mayoría escucha</string>
+    <string name="home">Casa</string>
+    <string name="journey">viaje</string>
+    <string name="journeys">Viaje</string>
+    <string name="settings">Ajustes</string>
+
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="gentle_morning">Mañana apacible</string>
+    <string name="morning_sound_with_multiple_music">Sonido de la mañana con música múltiple</string>
+    <string name="add_sound">Agregar sonido</string>
+    <string name="timer">Temporizador</string>
+    <string name="musicdata">MusicData</string>
+    <string name="title">Título</string>
+    <string name="alpha">alfa</string>
+    <string name="mediationsongs">MediaciónCanciones</string>
+    <string name="custom_tune">Melodía personalizada</string>
+    <string name="add_music">Agregar música</string>
+    <string name="addmusic">Agregar música</string>
+    <string name="main_sound">Sonido principal</string>
+    <string name="settingsnew">Ajustes</string>
+    <string name="feedback">Comentario</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="languages">Idiomas</string>
+    <string name="more_apps">Más aplicaciones</string>
+    <string name="share">Cuota</string>
+    <string name="go_premium">Hazte Premium</string>
+    <string name="meditationsoundnametxt">Sonido de meditación</string>
+    <string name="sounds">Sonidos</string>
+    <string name="custom_tunes">Melodías personalizadas</string>
+
+
+    <string name="default_sound">Por defecto</string>
+    <string name="clock_sound">Reloj</string>
+    <string name="rooster_sound">Gallo</string>
+    <string name="your">Su</string>
+    <string name="journeyss">Viaje</string>
+    <string name="total_checks_in_1_week">Total de cheques en 1 semana</string>
+    <string name="two">2</string>
+    <string name="total_weeks">Semanas Totales</string>
+    <string name="one">1</string>
+    <string name="remainder">recordatorio</string>
+    <string name="custom_tuness">Melodías personalizadas</string>
+    <string name="songs">canciones</string>
+    <string name="reminder">Recordatorio</string>
+    <string name="set_your_time">Establece tu hora</string>
+    <string name="pick_a_time_and_day_when_you_would">Elige una hora y un día. ¿Cuándo lo harías?</string>
+    <string name="like_to_receieve_notification">me gusta recibir notificaciones</string>
+    <string name="feedbacktxt">Comentario</string>
+    <string name="thank_you_for_using_this_app">Gracias por usar esta aplicación</string>
+    <string name="how_was_your_experience_with">Cómo fue tu experiencia con</string>
+    <string name="no_thanks">No, gracias</string>
+    <string name="send_feeback">Enviar comentarios</string>
+    <string name="write_feeback">escribir comentarios</string>
+    <string name="hellomypeoples">hola mi gente</string>
+    <string name="update_message">Actualiza tu aplicación</string>
+    <string name="restart">Reanudar</string>
+    <string name="english">inglés</string>
+    <string name="unlimited_access_to">Acceso ilimitado a</string>
+    <string name="all_premium_tools">Todas las herramientas premium</string>
+    <string name="get_seamless_experience_by_purchasing">Obtenga una experiencia perfecta al comprar</string>
+    <string name="the_ads_free_version">la versión gratuita de anuncios</string>
+    <string name="unlock_all_mediation_sound">Desbloquea todo el sonido de mediación</string>
+    <string name="_100_ads_free_version">Versión 100% libre de anuncios</string>
+    <string name="mindfulness_sound">Sonido de atención plena</string>
+    <string name="monthly_offer">Oferta Mensual</string>
+    <string name="pkr">PKR.</string>
+    <string name="_2500">2500 /-</string>
+    <string name="viewpagetitle">título</string>
+    <string name="description">Descripción</string>
+    <string name="time">Hora</string>
+    <string name="close">Cerca</string>
+    <string name="set_the_timer">Establecer el temporizador</string>
+    <string name="set_your_times">Establece tu tiempo</string>
+    <string name="how_long_do_you_want_sound_to_play_for">¿Cuánto tiempo quieres que suene el sonido?</string>
+    <string name="add_timer">Agregar temporizador</string>
+    <string name="_00_00">00.00</string>
+    <string name="this_app">Esta aplicación</string>
+    <string name="tap_to_skip">Toca para saltar</string>
+    <string name="currenttime">tiempo actual</string>
+    <string name="days">Dias</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="am">SOY</string>
+    <string name="home_btm">Hogar</string>
+    <string name="journeybtm">Viaje</string>
+    <string name="settingbtm">Configuración</string>
+    <string name="gentletitle">Mañana apacible</string>
+    <string name="gentlebody">Sonido matutino con múltiples músicas</string>
+    <string name="peacelaketitle">Lago pacífico</string>
+    <string name="peacelakebody">Canción pacífica con múltiples músicas</string>
+    <string name="sunrisetitle">Amanecer</string>
+    <string name="sunrisebody">Sonido del amanecer con múltiples músicas</string>
+    <string name="softtitle">piano suave</string>
+    <string name="softbody">Piano suave con múltiples músicas</string>
+    <string name="heaventitle">Cielo</string>
+    <string name="heavenbody">Heaven Sound con múltiples músicas</string>
+    <string name="raintitle">lluvia perfecta</string>
+    <string name="rainbody">Múltiples Sonidos con Efectos de Lluvia</string>
+    <string name="inspirationtitle">Inspiración</string>
+    <string name="inspirationbody">Sonido inspirador con diferentes efectos</string>
+    <string name="autumntitle">Bosque de otoño</string>
+    <string name="autumnbody">Sonido del bosque con diferentes efectos</string>
+    <string name="conventtitle">Convento</string>
+    <string name="conventbody">Sonido Áreas Conventuales</string>
+    <string name="seatitle">Relajación junto al mar</string>
+    <string name="seabody">Los mejores sonidos de relajación</string>
+    <string name="templetitle">templo en colinas</string>
+    <string name="templebody">Sonido del área del templo con colinas</string>
+    <string name="mystictitle">Templo mística</string>
+    <string name="mysticbody">Sonido del área del templo místico con colinas</string>
+    <string name="scratchingtitle">rascarse</string>
+    <string name="scratchingbody">Sonidos de scratching con efectos</string>
+    <string name="pagetitle">Pasar página</string>
+    <string name="pagebody">Cambio de página con efectos</string>
+    <string name="chewingtitle">Masticación</string>
+    <string name="chewingbody">Efectos de sonido de masticación</string>
+    <string name="whisperingtitle">Susurro</string>
+    <string name="whisperingbody">Efectos de sonido susurrantes</string>
+    <string name="breathingtitle">Respiración</string>
+    <string name="breathingbody">Efectos de sonido de respiración</string>
+    <string name="cracklingtitle">Chicharrón</string>
+    <string name="cracklingbody">Efecto de sonido crepitante</string>
+    <string name="cattitle">gato ronroneando</string>
+    <string name="catbody">Gato ronroneando con efectos de sonido</string>
+    <string name="cancel">Cancelar</string>
+    <string name="exit">Salida</string>
+    <string name="do_you_want_to_exit">Quieres salir</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string-array name="quotations">
+        <item>"A veces lo más productivo que puedes hacer es relajarte". -Marca Negro</item>
+        <item>"Cuanto más relajado puedas estar, mejor lo harás". -Isaac Mizrahi</item>
+        <item>"Tan importante como es tener un plan para hacer el trabajo, quizás sea más importante planificar el descanso, la relajación, el cuidado personal y el sueño". -Akiroq Brost</item>
+        <item>“A veces lo más importante en todo un día es el descanso que hacemos entre dos respiraciones profundas”. -Etty Hillesum</item>
+        <item>"No importa cuánta presión sientas en el trabajo, si pudieras encontrar formas de relajarte durante al menos cinco minutos cada hora, serías más productivo". - Dra. Joyce Hermanos</item>
+    </string-array>
+</resources>

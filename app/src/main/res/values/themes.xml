@@ -1,0 +1,144 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MeditationSoundMixture" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="black_and_white">#000000</item>
+        <item name="language_item_text">#000000</item>
+        <item name="language_item_bg">#33FFF0F5</item>
+        <item name="alternative_black_and_white">#fff</item>
+        <item name="recyclerViewStyle_border">#F5437A</item>
+        <item name="bg_meditation_end">#F3F3F3</item>
+        <item name="bg_meditation_start">#FFFFFF</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.MeditationSoundMixture.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/popupbackground</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_10sdp</item>
+
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/darkwhite</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/navcolor</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name = "MyDialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+    </style >
+    <style name="DefaultNumberPickerTheme" parent="Theme.MeditationSoundMixture">
+        <item name="colorControlNormal">@color/transparent</item>
+    </style>
+    <style name="NumberPickerText">
+        <item name="android:textColor">@color/darkcolor</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    //viewpagercolor
+    <color name="titlecolor">#36374B</color>
+    <color name="creamtextcolor">#B1B1B1</color>
+    <color name="pm">#B4B4B4</color>
+    <color name="fillcolor">#E3E3E3</color>
+
+    //languagescolor
+    <color name="textcolor">#000000</color>
+    <color name="tickcolor">#C6C6C6</color>
+
+//MediationMusic
+    <color name="white">#FFF</color>
+    <color name="mediationblack">#000000</color>
+    <color name="mediationmorning">#B1B1B1</color>
+    <color name="convert_black_white">#212121</color>
+    <color name="bg_convert_color">#FCFBFE</color>
+    <color name="lightcolor">#BEBEBE</color>
+    <color name="musicicon">#000000</color>
+    //settingsscreenscolor
+    <color name="settingblack">#1B1B1B</color>
+    <color name="soundIcon">#F5437A</color>
+    <color name="darkcolor">#1C1B1F </color>
+    <color name="alpha">#FFFFFF</color>
+    <color name="primaryColors">#200c2e</color>
+    <color name="bg_meditation_color">@color/white</color>
+    <color name="bg_meditation_color_center">#80FFFFFF</color>
+
+    //dialog Background
+    <color name="addmusic">#121212</color>
+    //music background
+    <color name="music">#1B1B1B</color>
+    <color name="nature">#1B1B1B</color>
+    <color name="bottomsheetbgcolor">#FCFBFE</color>
+    <color name="cardcolor">#D9D9D9</color>
+    //dialogseekbarbackground
+    <color name="dialogseekbar">#F3F3F3</color>
+    <color name="setyourtime">#767676</color>
+    <color name="backgroundcolor">#F5437A</color>
+    <color name="transparentcolor">#F3F3F3</color>
+    <color name="remaindercolor">#B4B4B4</color>
+    <color name="backgroundcolorfeedback">#FCFBFE</color>
+    <color name="txtthanku">#000000</color>
+    <color name="experiencefeedback">#B0B0B0</color>
+    <color name="writefeedback">#9C9C9C</color>
+    <color name="feedbackbtn">#F5437A</color>
+    <color name="add_timer_bg">#AEAEAE</color>
+    <color name="btnstrokecolor">#F5437A</color>
+    <color name="mindfulnesscolor">#FFFFFF</color>
+    <color name="getseemlesscolor">#DBDBDB </color>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="trackTint">@color/switch_track_color</item>
+        <item name="thumbColor">#F5437A</item>
+        <item name="thumbTint">#F5437A</item>
+    </style>
+    //dialogscreen
+    <color name="textstart">#000000</color>
+    <color name="setime">#767676</color>
+    <color name="btncolor">#FFFFFF</color>
+    <color name="delbtn">#121212</color>
+    <color name="gradientcolor">#CCCCCC</color>
+    <color name="grblackcolor">#000000</color>
+    <color name="ovalcolor">#D9D9D9</color>
+    <color name="alarmabg">#FCFBFE</color>
+    <color name="shapecp">#FFF1F5</color>
+    <color name="blackalarm">#000000</color>
+    <color name="yourjourney">#212121</color>
+    //remainder
+    <color name="lightGrey">#F3F3F3</color>
+
+
+
+
+
+</resources>

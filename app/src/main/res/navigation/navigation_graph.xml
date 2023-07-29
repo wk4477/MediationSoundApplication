@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.project.meditationsoundmixture.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/alarmsFragment"
+        android:name="com.project.meditationsoundmixture.Journey.fragments.AlarmsFragment"
+        android:label="fragment_alarms"
+        tools:layout="@layout/fragment_alarms" >
+        <action
+            android:id="@+id/action_alarmsFragment_to_addAlarmFragment"
+            app:destination="@id/addAlarmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.project.meditationsoundmixture.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/addAlarmFragment"
+        android:name="com.project.meditationsoundmixture.fragments.AddAlarmFragment"
+        tools:layout="@layout/fragment_add_alarm"
+        android:label="AddAlarmFragment" >
+        <action
+            android:id="@+id/action_addAlarmFragment_to_alarmsFragment"
+            app:destination="@id/alarmsFragment"
+            app:popUpTo="@id/navigation_graph"
+            app:popUpToInclusive="true" />
+    </fragment><action android:id="@+id/action_global_settingFragment" app:destination="@id/settingFragment"/>
+</navigation>

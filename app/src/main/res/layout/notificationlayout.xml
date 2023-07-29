@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/bgshape">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/songicon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/music_note" />
+
+        <TextView
+            android:id="@+id/textMediation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/songicon"
+            android:text="@string/meditationsound"
+            android:textSize="@dimen/_8ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/textMediation"
+            android:textSize="@dimen/_8ssp"
+            android:layout_toRightOf="@+id/textMediation"
+            android:text="@string/time_not_set" />
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/artwork" />
+
+        <TextView
+            android:id="@+id/meditationsound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songicon"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/meditationsounds"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meditationsound"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/playingsong" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/meditationsound"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/playing"
+            android:src="@drawable/ic_pause" />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/meditationsound"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/pause"
+            android:src="@drawable/stop" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

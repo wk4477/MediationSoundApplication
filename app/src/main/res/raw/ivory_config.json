@@ -1,0 +1,266 @@
+{
+  "$schema": "https://maple-scrimshaw.s3.amazonaws.com/IvorySDK_Config_Schema/4.3.0/ivory_config_schema.json",
+  "version": "4.3.0",
+  "platform": {
+    "log_level": 0,
+    "google_consent_publisher_identifier": "pub-4229758926684576"
+  },
+  "debug": {
+    "enabled": true,
+    "auto_show": false
+  },
+  "ads": {
+    "modules": [
+      {
+        "name": "MAX",
+        "sdk_key": "ycWu8G8cR26TPTL99xLNEMoL2ZlGOd5LEbDNtM-IP5nqd6zo2JAHfychWLzwz3FCfTaWqTqEda2Gh_2kJC0z9c",
+        "mute_audio": true,
+        "banners": [
+          {
+            "name": "banner",
+            "groups": [
+              "banner"
+            ],
+            "ad_datas": [
+              {
+                "adunit_id": "086863ec142f46f5",
+                "ad_format": "banner",
+                "bidder_name": "AmazonPublisherServices",
+                "bidder_params": {
+                  "slotUUID": "5dc8437e-c2a3-43ef-8c0b-b745716b858f",
+                  "width": 320,
+                  "height": 50
+                }
+              }
+            ],
+            "anchor": "BottomCenter",
+            "offset_x": -20,
+            "offset_y": 0
+          }
+        ],
+        "interstitials": [
+          {
+            "name": "interstitial",
+            "groups": [
+              "interstitial"
+            ],
+            "adunit_id": "b6629e39edfcae94",
+            "bidder_name": "AmazonPublisherServices",
+            "bidder_params": {
+              "slotUUID": "4e76bb03-34b4-4630-8b24-452a24da2fb1"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "triggers": [
+      {
+        "event": "sys_ads_ad_mediator_sdk_initialized",
+        "actions": [
+          {
+            "action": "ads_interstitial_load",
+            "thread": "main",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          },
+          {
+            "action": "ads_banner_load",
+            "thread": "main",
+            "parameters": {
+              "groups": [
+                "banner"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_sound_clicked",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_play_clicked",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_pause_clicked",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_effect_added",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_timer_set",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "on_timer_finished",
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "event": "show_prestitial",
+        "condition": {
+          "name": "gt",
+          "parameters": {
+            "lhs": {
+              "metric": "sys_application_launch-count"
+            },
+            "rhs": 1
+          }
+        },
+        "actions": [
+          {
+            "action": "ads_interstitial_show",
+            "parameters": {
+              "groups": [
+                "interstitial"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "localizations": {
+    "texts": [
+      {
+        "key": "tos_pp_title",
+        "en": "Terms of Service and Privacy Policy",
+        "de": "Nutzungsbedingungen und Datenschutzbestimmungen",
+        "es": "Termino del Servicio y Política de Privacidad",
+        "fr": "Conditions d'Utilisation et Politique de Confidentialité",
+        "it": "Termini di Servizio e Politica sulla Privacy",
+        "ja": "サービスの利用規約およびプライバシーポリシー",
+        "ko": "서비스 및 개인 정보 보호 정책 약관",
+        "nl": "Gebruiksvoorwaarden en Privacybeleid",
+        "pt": "Termos de Serviço e Política de Privacidade",
+        "ru": "Условия предоставления услуг и Политика конфиденциальности",
+        "zh": "服务条款和隐私权政策"
+      },
+      {
+        "key": "tos_pp_message",
+        "en": "Please review and accept app %s and %s to proceed.",
+        "de": "Bitte lesen und akzeptieren app %s und %s, um fortzufahren.",
+        "es": "Por favor, revise y acepte aplicación %s y %s proceder.",
+        "fr": "S'il vous plaît lire et accepter les %s et la %s de l'application pour continuer.",
+        "it": "Si prega di leggere e accettare app %s e %s per procedere.",
+        "ja": "続行するために、アプリ %s と %s のを確認し、同意してください。",
+        "ko": "검토하십시오 및 응용 프로그램 %s 와 %s 의 진행에 동의합니다.",
+        "nl": "Lees en accepteer app %s en %s om verder te gaan.",
+        "pt": "Por favor, leia e aceite os %s e %s do aplicativo para continuar.",
+        "ru": "Пожалуйста, ознакомьтесь и примите приложение %s и %s, чтобы продолжить.",
+        "zh": "请阅读并接受应用程序 %s 和 %s 进行。"
+      },
+      {
+        "key": "tos_pp_agree",
+        "en": "Agree",
+        "de": "Zustimmen",
+        "es": "Aceptar",
+        "fr": "J’accepte",
+        "it": "Accettare",
+        "ja": "同意する",
+        "ko": "동의하다",
+        "nl": "Mee eens",
+        "pt": "Aceita",
+        "ru": "Согласен",
+        "zh": "同意"
+      },
+      {
+        "key": "tos",
+        "en": "Terms of Service",
+        "de": "Nutzungsbedingungen",
+        "es": "Términos de Servicio",
+        "fr": "Conditions d’Utilisation",
+        "it": "Termini di Servizio",
+        "ja": "利用規約",
+        "ko": "서비스 약관",
+        "nl": "Servicevoorwaarden",
+        "pt": "Termos de Serviço",
+        "ru": "условия обслуживания",
+        "zh": "服务条款"
+      },
+      {
+        "key": "tos_url",
+        "en": "https://maplemedia.io/terms-of-service"
+      },
+      {
+        "key": "pp",
+        "en": "Privacy Policy",
+        "de": "Datenschutz-Bestimmungen",
+        "es": "Política de Privacidad",
+        "fr": "Politique de Confidentialité",
+        "it": "Politica sulla Privacy",
+        "ja": "個人情報保護方針",
+        "ko": "개인 정보 정책",
+        "nl": "Privacybeleid",
+        "pt": "Política de Privacidade",
+        "ru": "Политика Конфиденциальностиa",
+        "zh": "隐私政策"
+      },
+      {
+        "key": "pp_url",
+        "en": "https://maplemedia.io/privacy"
+      }
+    ]
+  }
+}

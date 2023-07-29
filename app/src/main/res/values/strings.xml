@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">MeditationSoundMixture</string>
+    <string name="meditation_sound">Meditation Sound</string>
+    <string name="mixture">Mixture</string>
+    <string name="discover_relaxation">Discover relaxation</string>
+    <string name="sound_with_us">sound with us!</string>
+    <string name="newimage">New</string>
+    <string name="most_listen">Most Listen</string>
+    <string name="home">Home</string>
+    <string name="journey">journey</string>
+    <string name="journeys">Journey</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gentle_morning">Gentle Morning</string>
+    <string name="morning_sound_with_multiple_music">Morning sound With multiple music</string>
+    <string name="add_sound">Add Sound</string>
+    <string name="timer">Timer</string>
+    <string name="musicdata">MusicData</string>
+    <string name="title">Title</string>
+    <string name="alpha">alpha</string>
+    <string name="mediationsongs">MediationSongs</string>
+    <string name="custom_tune">Custom Tune</string>
+    <string name="add_music">Add Music</string>
+    <string name="addmusic">Add Music</string>
+    <string name="main_sound">Main Sound</string>
+    <string name="settingsnew">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="languages">Languages</string>
+    <string name="more_apps">More Apps</string>
+    <string name="share">Share</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="meditationsoundnametxt">Meditation Sound</string>
+    <string name="sounds">Sounds</string>
+    <string name="custom_tunes">Custom Tunes</string>
+
+
+    <string name="default_sound">Default</string>
+    <string name="clock_sound">Clock</string>
+    <string name="rooster_sound">Rooster</string>
+    <string name="your">Your</string>
+    <string name="journeyss">Journey</string>
+    <string name="total_checks_in_1_week">Total Checks in 1 week</string>
+    <string name="two">2</string>
+    <string name="total_weeks">Total Weeks</string>
+    <string name="one">1</string>
+    <string name="remainder">Reminder</string>
+    <string name="custom_tuness">Custom Tunes</string>
+    <string name="songs">songs</string>
+    <string name="reminder">Reminder</string>
+    <string name="set_your_time">Set your Time</string>
+    <string name="pick_a_time_and_day_when_you_would">Pick a time and day.When you would</string>
+    <string name="like_to_receieve_notification">like to receieve notification</string>
+    <string name="feedbacktxt">Feedback</string>
+    <string name="thank_you_for_using_this_app">Thank you For Using this App</string>
+    <string name="how_was_your_experience_with">How was your experience with</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="send_feeback">Send Feeback</string>
+    <string name="write_feeback">write Feeback</string>
+    <string name="hellomypeoples">hellomypeoples</string>
+    <string name="update_message">Update your app</string>
+    <string name="restart">Restart</string>
+    <string name="english">English</string>
+    <string name="unlimited_access_to">Unlimited Access To</string>
+    <string name="all_premium_tools">All Premium Tools</string>
+    <string name="get_seamless_experience_by_purchasing">Get seamless Experience by purchasing</string>
+    <string name="the_ads_free_version">the ads free version</string>
+    <string name="unlock_all_mediation_sound">Unlock all mediation sound</string>
+    <string name="_100_ads_free_version">100% ads free Version</string>
+    <string name="mindfulness_sound">MindFulness Sound</string>
+    <string name="monthly_offer">Monthly Offer</string>
+    <string name="pkr">PKR.</string>
+    <string name="_2500">2500 /-</string>
+    <string name="viewpagetitle">title</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="close">Close</string>
+    <string name="set_the_timer">Set The timer</string>
+    <string name="set_your_times">Set your time</string>
+    <string name="how_long_do_you_want_sound_to_play_for">How long do you want sound to play for?</string>
+    <string name="add_timer">Add Timer</string>
+    <string name="_00_00">00.00</string>
+    <string name="this_app">this app</string>
+    <string name="tap_to_skip">Tap to Skip</string>
+    <string name="currenttime">currenttime</string>
+    <string name="days">Days</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="am">AM</string>
+    <string name="meditationsound" translatable="false">Meditation Sound</string>
+    <string name="time_not_set" translatable="false">Timer not Set</string>
+    <string name="meditationsounds" translatable="false">Meditation Sound</string>
+    <string name="playing" translatable="false">Playing</string>
+    <string name="playingsong" translatable="false">Playing</string>
+    <string name="no_pic" translatable="false">No Pic</string>
+    <string name="languages_acti" translatable="false">Languages</string>
+    <string name="pick_a_time_and_day_when_you_would_like_to_receive_notification" translatable="false">Pick a time and day. When you would like to receive notification</string>
+    <string name="home_btm">Home</string>
+    <string name="journeybtm">Journey</string>
+    <string name="settingbtm">Setting</string>
+    <string name="gentletitle">Gentle Morning</string>
+    <string name="gentlebody">Morning Sound With Multiple Musics</string>
+    <string name="peacelaketitle">Peaceful Lake</string>
+    <string name="peacelakebody">Peaceful Song With Multiple Musics</string>
+    <string name="sunrisetitle">Sunrise</string>
+    <string name="sunrisebody">Sunrise Sound with Multiple Musics</string>
+    <string name="softtitle">Soft Piano</string>
+    <string name="softbody">Soft Piano with Multiple Musics</string>
+    <string name="heaventitle">Heaven</string>
+    <string name="heavenbody">Heaven Sound  with Multiple Musics</string>
+    <string name="raintitle">Perfect Rain</string>
+    <string name="rainbody">Multiple Sound with Rain Effects</string>
+    <string name="inspirationtitle">Inspiration</string>
+    <string name="inspirationbody">Inspiration Sound with Different Effects</string>
+    <string name="autumntitle">Autumn Forest</string>
+    <string name="autumnbody">Forest Sound with Different Effects</string>
+    <string name="conventtitle">Convent</string>
+    <string name="conventbody">Convent Areas Sound</string>
+    <string name="seatitle">Sea Side Relaxation</string>
+    <string name="seabody">Best Relaxation Sounds</string>
+    <string name="templetitle">Temple In Hills</string>
+    <string name="templebody">Temple Area Sound With Hills</string>
+    <string name="mystictitle">Mystic Temple</string>
+    <string name="mysticbody">Mystic Temple Area Sound With Hills</string>
+    <string name="scratchingtitle">Scratching</string>
+    <string name="scratchingbody">Scratching Sounds With Effects</string>
+    <string name="pagetitle">Page Turning</string>
+    <string name="pagebody">Page Turning With Effects</string>
+    <string name="chewingtitle">Chewing</string>
+    <string name="chewingbody">Chewing Sound Effects</string>
+    <string name="whisperingtitle">Whispering</string>
+    <string name="whisperingbody">Whispering Sound Effects</string>
+    <string name="breathingtitle">Breathing</string>
+    <string name="breathingbody">Breathing Sound Effects</string>
+    <string name="cracklingtitle">Crackling</string>
+    <string name="cracklingbody">Crackling Sound Effect</string>
+    <string name="cattitle">Cat Purring</string>
+    <string name="catbody">Cat Purring with sound Effects</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="do_you_want_to_exit">Do you want to Exit</string>
+
+    <string-array name="quotations">
+        <item>"Sometimes the most productive thing you can do is relax". -Mark Black</item>
+        <item>"The more relaxed you can get, the better you'll do". - Isaac Mizrahi</item>
+        <item>"As important as it is to have a plan for doing work, it is perhaps more important to plan for rest, relaxation, self-care, and sleep." - Akiroq Brost</item>
+        <item>"Sometimes the most important thing in a whole day is the rest we take between two deep breaths". - Etty Hillesum</item>
+        <item>"No matter how much pressure you feel at work, if you could find ways to relax for at least five minutes every hour, you'd be more productive." - Dr. Joyce Brothers</item>
+    </string-array>
+</resources>
